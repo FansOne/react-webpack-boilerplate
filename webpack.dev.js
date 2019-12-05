@@ -19,6 +19,7 @@ module.exports = merge(common, {
     clientLogLevel: 'none',
     quiet: true,
     overlay: true,
+    hotOnly: false,
   },
   plugins: [
     new FriendlyErrorsWebpackPlugin({
