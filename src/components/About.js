@@ -12,7 +12,7 @@ export default class About extends Component {
     render() {
         // console.log(this.state.routeParams)
         return (
-            <div>
+            <div style={{display:'flex',flexDirection:'column',alignItems:'center',marginTop:'20px'}}>
                 <div>年龄：{this.state.routeParams.age}</div>
                 <div>身高：{this.state.routeParams.height}</div>
             </div>

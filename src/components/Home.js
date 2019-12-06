@@ -3,7 +3,7 @@ import { Empty } from 'antd';
 export default class Home extends Component {
     render() {
         return (
-            <div>
+            <div style={{marginTop:'20px'}}>
                 <Empty />
             </div>
         )
