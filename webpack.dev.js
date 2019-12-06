@@ -12,6 +12,7 @@ module.exports = merge(common, {
   },
   devtool: 'inline-source-map',
   devServer: {
+    host:'192.168.0.129',
     port: 8888,
     contentBase: './dist',
     compress: true,
@@ -24,7 +25,7 @@ module.exports = merge(common, {
   plugins: [
     new FriendlyErrorsWebpackPlugin({
       compilationSuccessInfo: {
-        messages: ['You application is running http://localhost:8888']
+        messages: ['You application is running http://192.168.0.129:8888']
       },
       onErrors: (severity, errors) => {
         if (severity !== 'error') {

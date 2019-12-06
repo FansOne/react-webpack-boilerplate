@@ -9,8 +9,8 @@
     "url": "https://github.com/Fansone/react-webpack-boilerplate"
   },
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --progress --config webpack.dev.js",
-    "build": "cross-env NODE_ENV=production webpack --mode production --progress --config webpack.prod.js",
+    "start": "cross-env webpack-dev-server --mode development --progress --config webpack.dev.js",
+    "build": "cross-env webpack --mode production --progress --config webpack.prod.js",
     "http-server": "npm run build && npm run server",
     "server": "http-server dist -p 1234",
     "precommit-msg": "echo 'Pre-commit checks.........' && exit 0",

@@ -6,7 +6,9 @@ export default class About extends Component {
             routeParams: props.match.params
         }
     }
-    UNSAFE_componentWillMount(){}
+    UNSAFE_componentWillMount(){
+        this.$axios.get('test')
+    }
     render() {
         // console.log(this.state.routeParams)
         return (
